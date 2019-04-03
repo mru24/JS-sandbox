@@ -38,6 +38,19 @@ navItemArray.forEach(e => {
   })
 })
 
+var btn = document.querySelectorAll('.list .delete');
+
+console.log(btn);
+
+Array.from(btn).forEach(e => {
+  e.addEventListener('click', btn => {
+
+    const li = btn.target.parentElement;
+
+    li.parentNode.removeChild(li);
+  })
+})
+
 // const lis = document.querySelectorAll('li');
 //
 // console.log(lis);

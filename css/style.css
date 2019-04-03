@@ -25,9 +25,10 @@ body {
 }
 
 body .container {
-  background: #eee;
+  background: #fafafa;
   color: #444;
   width: 80%;
+  height: 1000px;
   margin: auto;
   padding: 20px;
 }
@@ -39,17 +40,46 @@ body .container {
   }
 }
 
+body .container .header {
+  background: #eee;
+  padding: 30px;
+  border-radius: 5px;
+}
+
 body .container nav {
-  margin: 20px;
+  margin: 20px auto;
+  width: 90%;
 }
 
 body .container nav ul {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 body .container nav ul li a {
   padding: 10px 20px;
   background: blue;
   color: white;
+}
+
+body .container .list ul li {
+  width: 96%;
+  margin: 10px auto;
+  background: white;
+  border: 1px solid #999;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body .container .list ul li button {
+  background: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }

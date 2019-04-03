@@ -21,22 +21,48 @@ a:visited
 body
   font-family: sans-serif
   .container
-    background: #eee
+    background: #fafafa
     color: #444
     width: 80%
+    height: 1000px
     margin: auto
     padding: 20px
     @include mobile
       width: 100%
       padding: 10px
     .header
+      background: #eee
+      padding: 30px
+      border-radius: 5px
     nav
-      margin: 20px
+      margin: 20px auto
+      width: 90%
       ul
         display: flex
         flex-direction: row
+        justify-content: space-around
         li
           a
             padding: 10px 20px
             background: blue
             color: white
+    .content
+    .list
+      ul
+        li
+          width: 96%
+          margin: 10px auto
+          background: white
+          border: 1px solid #999
+          padding: 20px
+          display: flex
+          flex-direction: row
+          justify-content: space-between
+          align-items: center
+          button
+            background: blue
+            color: white
+            padding: 10px 20px
+            border: none
+            border-radius: 5px
+            cursor: pointer
