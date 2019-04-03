@@ -38,15 +38,18 @@ navItemArray.forEach(e => {
   })
 })
 
+// select all delete buttons
 var btn = document.querySelectorAll('.list .delete');
 
-console.log(btn);
+// console.log(btn);
 
+// convert htmlcollection to array and loop through elements
 Array.from(btn).forEach(e => {
+  // add event listener to each delete button
   e.addEventListener('click', btn => {
-
+    // find parent element of clicked button
     const li = btn.target.parentElement;
-
+    // find parent element of clicked button parent element and remove it's child
     li.parentNode.removeChild(li);
   })
 })
