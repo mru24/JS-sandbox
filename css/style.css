@@ -64,15 +64,20 @@ body .container nav ul li a {
 }
 
 body .container .list ul li {
-  width: 96%;
+  width: 100%;
   margin: 10px auto;
   background: white;
-  border: 1px solid #999;
+  border-left: 4px solid #999;
   padding: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+body .container .list ul li p {
+  width: 70%;
+  font-weight: lighter;
 }
 
 body .container .list ul li button {

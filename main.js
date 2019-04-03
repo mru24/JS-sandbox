@@ -38,20 +38,33 @@ navItemArray.forEach(e => {
   })
 })
 
-// select all delete buttons
-var btn = document.querySelectorAll('.list .delete');
+// ADD EVENT v1
 
-// console.log(btn);
+// // select all delete buttons
+// var btn = document.querySelectorAll('.list .delete');
+//
+// // console.log(btn);
+//
+// // convert htmlcollection to array and loop through elements
+// Array.from(btn).forEach(e => {
+//   // add event listener to each delete button
+//   e.addEventListener('click', btn => {
+//     // find parent element of clicked button
+//     const li = btn.target.parentElement;
+//     // find parent element of clicked button parent element and remove it's child
+//     li.parentNode.removeChild(li);
+//   })
+// })
 
-// convert htmlcollection to array and loop through elements
-Array.from(btn).forEach(e => {
-  // add event listener to each delete button
-  e.addEventListener('click', btn => {
-    // find parent element of clicked button
-    const li = btn.target.parentElement;
-    // find parent element of clicked button parent element and remove it's child
-    li.parentNode.removeChild(li);
-  })
+// ADD EVENT v2 bubbling
+
+const list = document.querySelector('.list ul');
+
+list.addEventListener('click', e => {
+  if(e.target.className == 'delete') {
+    const li = e.target.parentElement;
+    list.removeChild(li);
+  }
 })
 
 // const lis = document.querySelectorAll('li');
