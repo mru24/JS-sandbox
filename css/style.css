@@ -63,6 +63,12 @@ body .container nav ul li a {
   color: white;
 }
 
+body .container .about {
+  padding: 15px;
+  font-weight: lighter;
+  text-indent: 30px;
+}
+
 body .container .list ul li {
   width: 100%;
   margin: 10px auto;
@@ -88,4 +94,23 @@ body .container .list ul li button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+body .container .form {
+  background: #777;
+  padding: 30px 0;
+}
+
+body .container .form form {
+  width: 50%;
+  margin: auto;
+}
+
+body .container .form form input {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+  padding-left: 10px;
+  font-size: 18px;
 }
