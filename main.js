@@ -74,6 +74,33 @@ list.addEventListener('click', e => {
   }
 })
 
+// FORMS
+
+// ADD FORM
+const addForm = document.forms['add'];
+addForm.addEventListener('submit', e => {
+  e.preventDefault();
+  const value = addForm.querySelector('input[type="text"]').value;
+  // create elements
+  const li = document.createElement('li');
+  const p = document.createElement('p');
+  const btnEdit = document.createElement('button');
+  const btnDelete = document.createElement('button');
+  // add text content
+  p.textContent = value;
+  btnDelete.textContent = 'Delete';
+  btnDelete.classList.add('delete');
+  btnEdit.textContent = 'Edit';
+  btnEdit.classList.add('edit');
+  // append elements
+  li.appendChild(p);
+  li.appendChild(btnDelete);
+  li.appendChild(btnEdit);
+  list.appendChild(li);
+})
+
+
+
 // const lis = document.querySelectorAll('li');
 //
 // console.log(lis);
