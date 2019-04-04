@@ -67,6 +67,13 @@ list.addEventListener('click', e => {
   }
 })
 
+list.addEventListener('click', e => {
+  if(e.target.className == 'edit') {
+    const li = e.target.parentElement;
+    alert(e.target.parentElement.innerText);
+  }
+})
+
 // const lis = document.querySelectorAll('li');
 //
 // console.log(lis);
